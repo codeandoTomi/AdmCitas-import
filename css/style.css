@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white; }
+  body.active {
+    background-color: #332c2c; }
+    body.active .div01 h1 {
+      color: white; }
+    body.active .div01 button {
+      background-color: rgba(52, 156, 69, 0.856); }
+    body.active .container .lado1 {
+      border-right: 2px solid white; }
+      body.active .container .lado1 h2 {
+        color: white; }
+      body.active .container .lado1 input, body.active .container .lado1 textarea {
+        color: black;
+        background-color: white; }
+      body.active .container .lado1 label {
+        color: white; }
+      body.active .container .lado1 button {
+        background-color: green; }
+    body.active .lado2 .citas .divCita {
+      background-color: rgba(240, 160, 39, 0.623);
+      color: #332c2c; }
+      body.active .lado2 .citas .divCita .negrita {
+        color: #0d10a7; }
+      body.active .lado2 .citas .divCita .btnBorrar {
+        background-color: red; }
+      body.active .lado2 .citas .divCita .btnEditar {
+        background-color: green; }
+
+.div01 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid black; }
+  .div01 h1 {
+    color: black; }
+  .div01 button {
+    background-color: darkgrey;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px; }
+    .div01 button img {
+      padding: 5px; }
+
+.container {
+  margin: 20px;
+  padding: 10px;
+  display: flex; }
+  .container .lado1 {
+    border-right: 2px solid black; }
+    .container .lado1 input, .container .lado1 label, .container .lado1 textarea {
+      font-size: 22px;
+      padding: 5px;
+      margin: 5px; }
+    .container .lado1 input {
+      background-color: #332c2c;
+      color: white;
+      border-radius: 11px; }
+    .container .lado1 .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between; }
+    .container .lado1 .divMensaje {
+      background-color: green;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 8px;
+      font-size: 23px; }
+    .container .lado1 .tipoError {
+      background-color: red; }
+    .container .lado1 button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 30px;
+      background-color: green;
+      border-radius: 10px; }
+  .container .lado2 .citas .divCita {
+    width: 100%;
+    margin: 25px;
+    padding: 20px;
+    background-color: #332c2c;
+    border-radius: 5px;
+    color: white; }
+    .container .lado2 .citas .divCita .negrita {
+      font-size: 25px;
+      color: #50e614; }
+    .container .lado2 .citas .divCita p, .container .lado2 .citas .divCita h2, .container .lado2 .citas .divCita button {
+      margin: 5px;
+      padding: 5px; }
+    .container .lado2 .citas .divCita button {
+      font-size: 25px;
+      border-radius: 5px; }
+    .container .lado2 .citas .divCita .btnBorrar {
+      background-color: red; }
+    .container .lado2 .citas .divCita .btnEditar {
+      background-color: green; }

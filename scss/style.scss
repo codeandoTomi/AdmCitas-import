@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: white;
+
+    &.active{
+        background-color: rgb(51, 44, 44);
+        .div01{
+            h1{
+                color: rgb(255, 255, 255);
+            }
+            button{
+                background-color: rgba(52, 156, 69, 0.856);
+            }
+        }
+        .container{
+        
+            .lado1{
+                border-right: 2px solid rgb(255, 255, 255);
+                h2{
+                    color: white;
+                }
+                input,textarea{
+                    color: rgb(0, 0, 0);
+                    background-color: white;
+                }
+                label{
+                    color: white;
+                }
+                button{
+                    background-color: green;
+                    
+                }
+            }
+        }
+
+        .lado2{
+            .citas{
+    
+            .divCita{
+                background-color: rgba(240, 160, 39, 0.623);
+                color: rgb(51, 44, 44);
+                .negrita{
+                    color: rgb(13, 16, 167);
+                }
+                .btnBorrar{
+                    background-color: red;
+                }
+                .btnEditar{
+                    background-color: green;
+                }
+            }
+            }
+    
+        }
+
+    }
+}
+////////////////////////////////////////////////// BODY .active
+.div01{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px solid black;
+    h1{
+        color: rgb(0, 0, 0);
+    }
+    button{
+        background-color: darkgrey;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 22px;
+        img{
+            padding: 5px;
+        }
+    }
+}
+.container{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+
+    .lado1{
+        border-right: 2px solid black;
+        
+        input,label,textarea{
+            font-size: 22px;
+            padding: 5px;
+            margin: 5px;
+        }
+        input{
+            background-color: rgb(51, 44, 44);
+            color: white;
+            border-radius: 11px;
+        }
+        .inputs{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .divMensaje{
+            background-color: green;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+            font-size: 23px;
+        }
+        .tipoError{
+            background-color: red;
+        }
+        button{
+            margin: 5px;
+            padding: 10px;
+            font-size: 30px;
+            background-color: green;
+            border-radius: 10px;
+        }
+    }
+
+    .lado2{
+        .citas{
+
+        .divCita{
+            width: 100%;
+            margin: 25px;
+            padding: 20px;
+            background-color: rgb(51, 44, 44);
+            border-radius: 5px;
+            color: white;
+
+            .negrita{
+                font-size: 25px;
+                color: rgb(80, 230, 20);
+            }
+            p,h2,button{
+                margin: 5px;
+                padding: 5px;
+            }
+            button{
+                font-size: 25px;
+                border-radius: 5px;
+            }
+            .btnBorrar{
+                background-color: red;
+            }
+            .btnEditar{
+                background-color: green;
+            }
+        }
+        }
+
+    }
+
+
+
+}

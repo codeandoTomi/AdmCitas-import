@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Citas </title>
+</head>
+<body>
+
+    <div class="div01">
+        <h1> Administrador de citas </h1>
+        <button id="btnCambio">
+            <img src="#" alt="">
+        </button>
+    </div>
+    <div class="container">
+
+        <div class="lado1">
+            <form class="form1">
+                <h2>Datos de la cita.</h2>
+                <div class="inputs">
+                    <label name="nombre"> Nombre: </label>
+                    <div>
+                        <input type="text" name="nombre" placeholder=" Nombre" id="nombre">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label name="apellido"> Apellido: </label>
+                    <div>
+                        <input type="text" name="apellido" placeholder="Apellido" id="apellido">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label name="telefono"> Telefono: </label>
+                    <div>
+                        <input type="number" name="telefono" placeholder="Numero de Telefono" id="telefono">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label name="fecha"> fecha de inscripción: </label>
+                    <div>
+                        <input type="date" name="fechaInscripcion" id="fechaInscripcion">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label name="hora"> Hora: </label>
+                    <div>
+                        <input type="time" name="hora" id="hora">
+                    </div>
+                </div>
+                <div class="inputs">
+                    <label name="comentarios"> Comentarios: </label>
+                    <div>
+                        <textarea name="comentarios" id="comentarios"></textarea>
+                    </div>
+                </div>
+                <div class="buttonCrearCita">
+                    <button> Crear Cita </button>
+                </div>
+            </form>
+
+        </div>
+
+
+
+        <div class="lado2">
+            <form class="form2">
+
+                <div class="citas">
+                    <ul class="citasOrdenadas"></ul>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
